@@ -1,1 +1,85 @@
+Task 1 - basic task 
+ 
+ 1. ~$ ls     #it listed all of the files in my current directory 
+ 2. ~$ pwd    #it shows the current directory where I am working 
+ 3. ~$ mkdir Workspace
+    ~$ cd Workspace 
+ 4. ~$ ls     #when ls is typed nothing execute. I am working on a file that is in my directory where currently no files have been added.
+ 5. ~/Workspace$ touch README.md
+ 6. ~/Workspace$ cp README.md ./CHANGELOG.md
+ 
+ 
+ Task 2 - Absolute and Relative Paths
+ 
+ ~/Workspace$ touch exercise.md
+ ~/Workspace$ mv exercise.md /tmp/
+ ~/Workspace$ cd /tmp
+ /tmp$ ls
+ /tmp$ rm exercise.md
+ /tmp$ ls
+ 
+ Task 3 - Cat Commands 
+ 
+ //home/recruit$ cd Workspace 
+ 
+ 1/2. 
+ //home/recruit/Workspace$ cat > umuzi.md
+ umuzi is in jeppestown, johannesburg and is a non-governmental organisation
+ //home/recruit/Workspace$ cat > recruits.md
+ umuzi recruits are cool and awesome 
+ //home/recruit/Workspace$ cat > cohort.md
+ i belong to  cohort 20 Data Eng 
+ 
+ 3. //home/recruit/Workspace$ cat umuzi.md recruits.md cohort.md
+ 
+ 4/5.
+   //home/recruit/Workspace$ cat umuzi.md recruits.md cohort.md -> summary.md
+   The End 
+   //home/recruit/Workspace$ cat summary.md
+   
+   
+ Task 4 - The Locate Command 
+   
+ 1. //home/recruit/Workspace$ locate umuzi 
+ 2. //home/recruit/Workspace$ cd ~
+      ~$ touch search_results.md
+      ~$ ls
+      ~$ locate umuzi
+      ~$ locate umuzi > search_results.md
+      ~$ cat search_results.md
+      
+ 
+ Task 5 
+ 1. ~$ cd ~/Documents
+    ~/Documents$ touch pad.md
+ 2. ~/Documents$ cd ~/Desktop
+    ~/Desktop$ mkdir Work
+ 3. ~/Desktop$ cd ~/Documents
+    ~/Documents$ cp pad.md ./pad_copy.md
+    ~/Documents$ ls 
+ 4. ~/Documents$ locate updatedb
+ 5. ~/Documents$ cd ~/Desktop
+ 6. ~/Desktop$ locate pad_copy.md
+ 
+ 
+ Task 6 - Find Commands 
+ 1. ~$ find ~/ -name *.pdf
+ 2. ~$ find ~/ -name *.pdf > searchresults
+    ~$ ls
+    ~$ cat searchresults
+    ~$ cp searchresults ~/Desktop
+    
+ 3. ~$ find . type f -newermt 2020-01-16 -ls
+ 
+       
+ Task 7 -Text Editor 
+ 1. ~$ nano my_bio.d
+ 2. #press ctrl o enter crtl x enter 
+ 3. ~$ mkdir my_files 
+    ~$ mv my_bio.d my_files
 
+ 
+ 
+ 
+ 
+   
